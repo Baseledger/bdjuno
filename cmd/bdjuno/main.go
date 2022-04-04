@@ -17,6 +17,7 @@ import (
 	"github.com/forbole/bdjuno/v2/database"
 	"github.com/forbole/bdjuno/v2/modules"
 
+	baseledgerapp "github.com/Baseledger/baseledger/app"
 	gaiaapp "github.com/cosmos/gaia/v6/app"
 )
 
@@ -55,6 +56,7 @@ func main() {
 func getBasicManagers() []module.BasicManager {
 	return []module.BasicManager{
 		gaiaapp.ModuleBasics,
+		baseledgerapp.ModuleBasics,
 	}
 }
 
