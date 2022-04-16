@@ -54,6 +54,13 @@ array_relationships:
       table:
         name: validator_info
         schema: public
+- name: payees
+  using:
+    foreign_key_constraint_on:
+      column: consensus_address
+      table:
+        name: payee
+        schema: public
 - name: validator_signing_infos
   using:
     manual_configuration:
