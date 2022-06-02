@@ -17,5 +17,6 @@ select_permissions:
     - ubt_staking_balance
     - due_payment
     - stake_address_override
+    - last_modified_at
     filter: {}
   role: anonymous
